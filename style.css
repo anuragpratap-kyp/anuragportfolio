@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121925;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0059b3;
+  padding: 15px 40px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+nav ul li a:hover, .active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  /* background: linear-gradient(to right, #007bff, #00aaff); */
+  /* background-image: url(homebg.jpg); */
+  /* background-size: 50% 100%; */
+  /* background-repeat: no-repeat; */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  height: 550px;
+  display: flex;
+}
+.hero-content{
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+.hero-image{
+  width: 50%;
+  height: 100%;
+  /* display: flex; */
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #ffcc00;
+  font-size: 50px;
+}
+
+.hero-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00;
+  color: #333;
+  cursor: pointer;
+}
+
+/* About */
+.about, .projects, .gallery, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+.aboutcard{
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 55%;
+  height: auto;
+  /* word-wrap: break-word; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: normal; */
+}
+.aboutcard h2{
+    text-align: left;
+    font-size: 30px;
+    padding-left: 14px;
+    border-left: 7px solid rgb(238, 255, 5);
+}
+.aboutcard h3{
+  font-size: 30px;
+}
+.aboutcard p{
+    margin: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+.about{
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.skills{
+  margin-bottom: 1px;
+}
+.skills p{
+  margin: 0 0 2px;
+  font-weight: 250;
+  display: flex;
+  justify-content: space-between;
+
+}
+.bar{
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+.percent{
+  font-weight: 500;
+  color: #0d47a1;
+  text-align: left;
+}
+.bar span{
+  display: block;
+  height: 10px;
+  background: linear-gradient(90deg,#001129,#5d42f5);
+  border-radius: 10px;
+}
+
+
+/* Project Cards */
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects h2{
+    font-size: 45px;
+    color: #0ac7c7;
+    margin-bottom: 20px;
+}
+
+.card {
+  background: rgb(247, 247, 247);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(66, 66, 66, 0.774);
+  width: 30%;
+  height: 250px;
+}
+.card button{
+  margin-top: 35px;
+  cursor: pointer;
+}
+.card button a{
+  text-decoration: none;
+  color: #fff;
+}
+.card h3{
+    margin-top: 25px;
+}
+.card p{
+    margin-top: 20px;
+}
+
+
+/* Gallery */
+.gallery h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #02e08b;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  width: 30%;
+  height: 250px;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+  display: inline-block;
+  max-width: 400px;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.contact-form{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #0044ff;
+  height: 300px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+}
+.contact label{
+  color: #02e08b;
+}
+.contact h2{
+  color: #02e08b;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #00dbf8;
+}
+
+/* Footer */
+footer {
+  background: #0059b3;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 0px;
+}
